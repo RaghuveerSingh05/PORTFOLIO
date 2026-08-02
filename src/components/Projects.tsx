@@ -12,7 +12,7 @@ description:
 features:
 "⭐ Time-based rating system • Coin collection • Platforming mechanics • Speedrun gameplay",
 poster:"/posters/ratemyrun.jpg",
-video:"/videos/rate-my-run.mp4",
+video:"/videos/rate-my-run.webm",
 link:"https://raghuve3r.itch.io/ratemyrun"
 },
 
@@ -25,7 +25,7 @@ description:
 features:
 "3D movement • AI opponent • Platform claiming system • Strategic gameplay",
 poster:"/posters/jumptactoe.jpg",
-video:"/videos/jump-tac-toe.mp4",
+video:"/videos/jump-tac-toe.webm",
 link:"https://raghuve3r.itch.io/jump-tac-toe"
 },
 
@@ -38,7 +38,7 @@ description:
 features:
 "Speedrun mechanics • Multiple challenges • Timer system • Platforming",
 poster:"/posters/4doors.jpg",
-video:"/videos/4-doors.mp4",
+video:"/videos/4-doors.webm",
 link:"https://raghuve3r.itch.io/4-doors"
 },
 
@@ -51,7 +51,7 @@ description:
 features:
 "Memory system • Sequence generation • Puzzle mechanics • Replayability",
 poster:"/posters/colormemory.jpg",
-video:"/videos/color-memory.mp4",
+video:"/videos/color-memory.webm",
 link:"https://raghuve3r.itch.io/sequence-out"
 },
 
@@ -64,7 +64,7 @@ description:
 features:
 "Exploration • Key system • Door unlocking • Atmospheric design",
 poster:"/posters/intothedark.jpg",
-video:"/videos/into-the-dark.mp4",
+video:"/videos/into-the-dark.webm",
 link:"https://raghuve3r.itch.io/into-the-dark"
 },
 
@@ -77,7 +77,7 @@ description:
 features:
 "Typing mechanics • Enemy waves • Score system • Increasing difficulty",
 poster:"/posters/keystrike.jpg",
-video:"/videos/keystrike.mp4",
+video:"/videos/keystrike.webm",
 link:"https://raghuve3r.itch.io/keystrike"
 },
 
@@ -90,7 +90,7 @@ description:
 features:
 "Color mechanics • Obstacle navigation • Fast gameplay",
 poster:"/posters/colordash.jpg",
-video:"/videos/colordash.mp4",
+video:"/videos/colordash.webm",
 link:"https://raghuve3r.itch.io/colordash"
 }
 
@@ -110,7 +110,7 @@ description:
 features:
 "Ghost AI • Multiple modes • Power pellets • Difficulty progression",
 poster:"/posters/pacman.jpg",
-video:"/videos/pacman.mp4",
+video:"/videos/pacman.webm",
 link:"https://github.com/RaghuveerSingh05/PacMan-pygame"
 },
 
@@ -123,7 +123,7 @@ description:
 features:
 "Growth system • Score tracking • Speed scaling",
 poster:"/posters/snake.jpg",
-video:"/videos/snake.mp4",
+video:"/videos/snake.webm",
 link:"https://github.com/RaghuveerSingh05/snake-game-py"
 },
 
@@ -136,7 +136,7 @@ description:
 features:
 "Particle effects • Lives system • Timer mode • Score system",
 poster:"/posters/breakout.jpg",
-video:"/videos/breakout.mp4",
+video:"/videos/breakout.webm",
 link:"https://github.com/RaghuveerSingh05/Breakout-Pygame"
 }
 
@@ -206,7 +206,7 @@ playsInline
 
 src={project.video}
 
-type="video/mp4"
+type="video/webm"
 
 />
 
