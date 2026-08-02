@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function Projects(){
 
@@ -145,34 +145,45 @@ link:"https://github.com/RaghuveerSingh05/Breakout-Pygame"
 
 
 
-
 const Card = ({ project }: any) => {
 
 const videoRef = useRef<HTMLVideoElement>(null);
 
-const playVideo = () => {
+useEffect(() => {
 
-    if(videoRef.current){
+    const video = videoRef.current;
 
-        videoRef.current.play();
+    if (!video) return;
 
-    }
+    const observer = new IntersectionObserver(
 
-};
+        ([entry]) => {
 
-const stopVideo = () => {
+            if (entry.isIntersecting) {
 
-    if(videoRef.current){
+                video.play().catch(() => {});
 
-        videoRef.current.pause();
+            } else {
 
-        videoRef.current.currentTime = 0;
+                video.pause();
 
-        videoRef.current.load();
+            }
 
-    }
+        },
 
-};
+        {
+
+            threshold: 0.4
+
+        }
+
+    );
+
+    observer.observe(video);
+
+    return () => observer.disconnect();
+
+}, []);
 
 return(
 
@@ -181,24 +192,17 @@ return(
 <div
 className="project-video"
 
-onMouseEnter={playVideo}
 
-onMouseLeave={stopVideo}
 >
 
 <video
 
 ref={videoRef}
-
-poster={project.poster}
-
-preload="none"
-
-loop
-
+src={project.video}
 muted
-
+loop
 playsInline
+preload="metadata"
 
 >
 
