@@ -148,82 +148,119 @@ link:"https://github.com/RaghuveerSingh05/Breakout-Pygame"
 
 const Card = ({ project }: any) => {
 
-  const videoRef = useRef<HTMLVideoElement>(null);
+const videoRef = useRef<HTMLVideoElement>(null);
 
-  return (
+const playVideo = () => {
 
-    <div className="project">
+    if(videoRef.current){
 
-      <div
-        className="project-video"
-        onMouseEnter={() => {
-          if (videoRef.current) {
-            videoRef.current.play();
-          }
-        }}
-        onMouseLeave={() => {
-          if (videoRef.current) {
-            videoRef.current.pause();
-            videoRef.current.currentTime = 0;
-          }
-        }}
-      >
+        videoRef.current.play();
 
-        <video
-          ref={videoRef}
-          src={project.video}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={project.poster}
-        />
+    }
 
-        <div className="video-overlay">
+};
 
-          <span>▶</span>
+const stopVideo = () => {
 
-          <p>Hover to Preview</p>
+    if(videoRef.current){
 
-        </div>
+        videoRef.current.pause();
 
-      </div>
+        videoRef.current.currentTime = 0;
 
+        videoRef.current.load();
 
+    }
 
-      <div className="project-info">
+};
 
-        <h3>
-          {project.engine}
-        </h3>
+return(
 
-        <h2>
-          {project.title}
-        </h2>
+<div className="project">
 
-        <p>
-          {project.description}
-        </p>
+<div
+className="project-video"
 
-        <p>
-          {project.features}
-        </p>
+onMouseEnter={playVideo}
 
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noreferrer"
-        >
-          VIEW PROJECT →
-        </a>
+onMouseLeave={stopVideo}
+>
 
-      </div>
+<video
 
-    </div>
+ref={videoRef}
 
-  );
+poster={project.poster}
 
-}
+preload="none"
+
+loop
+
+muted
+
+playsInline
+
+>
+
+<source
+
+src={project.video}
+
+type="video/mp4"
+
+/>
+
+</video>
+
+</div>
+
+<div className="project-info">
+
+<h3>
+
+{project.engine}
+
+</h3>
+
+<h2>
+
+{project.title}
+
+</h2>
+
+<p>
+
+{project.description}
+
+</p>
+
+<p>
+
+{project.features}
+
+</p>
+
+<a
+
+href={project.link}
+
+target="_blank"
+
+rel="noreferrer"
+
+>
+
+VIEW PROJECT →
+
+</a>
+
+</div>
+
+</div>
+
+);
+
+};
 
 
 
