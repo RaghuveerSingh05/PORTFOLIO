@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 function Projects(){
 
 const unityProjects = [
@@ -9,6 +11,7 @@ description:
 "Fast-paced platformer where players race through a handcrafted level, collect coins, grab the key, and reach the exit before their star rating disappears.",
 features:
 "⭐ Time-based rating system • Coin collection • Platforming mechanics • Speedrun gameplay",
+poster:"/posters/ratemyrun.jpg",
 video:"/videos/rate-my-run.mp4",
 link:"https://raghuve3r.itch.io/ratemyrun"
 },
@@ -21,6 +24,7 @@ description:
 "A unique 3D twist on Tic Tac Toe where players jump across floating platforms to claim their mark against an AI opponent.",
 features:
 "3D movement • AI opponent • Platform claiming system • Strategic gameplay",
+poster:"/posters/jumptactoe.jpg",
 video:"/videos/jump-tac-toe.mp4",
 link:"https://raghuve3r.itch.io/jump-tac-toe"
 },
@@ -33,6 +37,7 @@ description:
 "A fast-paced platformer challenge where players complete four different doors while racing against the clock.",
 features:
 "Speedrun mechanics • Multiple challenges • Timer system • Platforming",
+poster:"/posters/4doors.jpg",
 video:"/videos/4-doors.mp4",
 link:"https://raghuve3r.itch.io/4-doors"
 },
@@ -45,6 +50,7 @@ description:
 "A memory puzzle game inside a testing chamber. Players memorize cube sequences and recreate them to escape.",
 features:
 "Memory system • Sequence generation • Puzzle mechanics • Replayability",
+poster:"/posters/colormemory.jpg",
 video:"/videos/color-memory.mp4",
 link:"https://raghuve3r.itch.io/sequence-out"
 },
@@ -57,6 +63,7 @@ description:
 "A dark maze adventure where players collect keys, unlock doors, and escape from a mysterious environment.",
 features:
 "Exploration • Key system • Door unlocking • Atmospheric design",
+poster:"/posters/intothedark.jpg",
 video:"/videos/into-the-dark.mp4",
 link:"https://raghuve3r.itch.io/into-the-dark"
 },
@@ -69,6 +76,7 @@ description:
 "An arcade shooter where your keyboard becomes your weapon. Type words appearing above enemies to attack them.",
 features:
 "Typing mechanics • Enemy waves • Score system • Increasing difficulty",
+poster:"/posters/keystrike.jpg",
 video:"/videos/keystrike.mp4",
 link:"https://raghuve3r.itch.io/keystrike"
 },
@@ -81,6 +89,7 @@ description:
 "A reaction-based color matching game focused on quick decisions and player responsiveness.",
 features:
 "Color mechanics • Obstacle navigation • Fast gameplay",
+poster:"/posters/colordash.jpg",
 video:"/videos/colordash.mp4",
 link:"https://raghuve3r.itch.io/colordash"
 }
@@ -100,6 +109,7 @@ description:
 "A recreation of the classic Pac-Man experience featuring maze navigation, ghost AI behaviours, power pellets and scoring.",
 features:
 "Ghost AI • Multiple modes • Power pellets • Difficulty progression",
+poster:"/posters/pacman.jpg",
 video:"/videos/pacman.mp4",
 link:"https://github.com/RaghuveerSingh05/PacMan-pygame"
 },
@@ -112,6 +122,7 @@ description:
 "A classic Snake game built with smooth controls, visual effects, scoring system and increasing difficulty.",
 features:
 "Growth system • Score tracking • Speed scaling",
+poster:"/posters/snake.jpg",
 video:"/videos/snake.mp4",
 link:"https://github.com/RaghuveerSingh05/snake-game-py"
 },
@@ -124,6 +135,7 @@ description:
 "A brick-breaking arcade game featuring particle effects, unbreakable blocks, timer system and multiple win conditions.",
 features:
 "Particle effects • Lives system • Timer mode • Score system",
+poster:"/posters/breakout.jpg",
 video:"/videos/breakout.mp4",
 link:"https://github.com/RaghuveerSingh05/Breakout-Pygame"
 }
@@ -134,72 +146,82 @@ link:"https://github.com/RaghuveerSingh05/Breakout-Pygame"
 
 
 
-const Card = ({project}:any)=>{
+const Card = ({ project }: any) => {
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  return (
+
+    <div className="project">
+
+      <div
+        className="project-video"
+        onMouseEnter={() => {
+          if (videoRef.current) {
+            videoRef.current.play();
+          }
+        }}
+        onMouseLeave={() => {
+          if (videoRef.current) {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+          }
+        }}
+      >
+
+        <video
+          ref={videoRef}
+          src={project.video}
+          muted
+          loop
+          playsInline
+          preload="none"
+          poster={project.poster}
+        />
+
+        <div className="video-overlay">
+
+          <span>▶</span>
+
+          <p>Hover to Preview</p>
+
+        </div>
+
+      </div>
 
 
-return(
 
-<div className="project">
+      <div className="project-info">
 
+        <h3>
+          {project.engine}
+        </h3>
 
-<div className="project-video">
+        <h2>
+          {project.title}
+        </h2>
 
+        <p>
+          {project.description}
+        </p>
 
-<video
+        <p>
+          {project.features}
+        </p>
 
-src={project.video}
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          VIEW PROJECT →
+        </a>
 
-autoPlay
+      </div>
 
-loop
+    </div>
 
-muted
-
-playsInline
-
-/>
-
-
-</div>
-
-
-
-<div className="project-info">
-
-
-<h3>
-{project.engine}
-</h3>
-
-
-<h2>
-{project.title}
-</h2>
-
-
-<p>
-{project.description}
-</p>
-
-
-<p>
-{project.features}
-</p>
-
-
-<a href={project.link} target="_blank">
-
-VIEW PROJECT →
-
-</a>
-
-
-</div>
-
-
-</div>
-
-)
+  );
 
 }
 
