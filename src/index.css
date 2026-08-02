@@ -1218,11 +1218,19 @@ section{
 
 .email-link{
 
-    font-size:14px;
+font-size:15px;
 
-    line-height:1.5;
+letter-spacing:.3px;
 
-    white-space:normal;
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-height:1.5;
+
+text-align:center;
 
 }
 
@@ -1282,8 +1290,16 @@ footer{
 
 font-size:15px;
 
-letter-spacing:.5px;
+letter-spacing:.3px;
 
-white-space:nowrap;
+white-space:normal;
+
+word-break:break-word;
+
+overflow-wrap:anywhere;
+
+line-height:1.5;
+
+text-align:center;
 
 }
