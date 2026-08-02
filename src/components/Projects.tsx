@@ -175,7 +175,7 @@ const Card = ({ project }: any) => {
           muted
           loop
           playsInline
-          preload="none"
+          preload="metadata"
           poster={project.poster}
         />
 
