@@ -75,10 +75,11 @@ function Contact() {
           </a>
 
           <a
-            href="mailto:raghuveersinghshekhawat2005@gmail.com"
-          >
-            Email
-          </a>
+href="mailto:raghuveersinghshekhawat2005@gmail.com"
+className="email-link"
+>
+raghuveersinghshekhawat2005@gmail.com
+</a>
 
         </div>
 
