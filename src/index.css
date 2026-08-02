@@ -483,17 +483,13 @@ width:55%;
 
 aspect-ratio:16/9;
 
-position:relative;
-
 overflow:hidden;
 
 border-radius:30px;
 
-background:#111;
+background:#000;
 
 cursor:pointer;
-
-box-shadow:0 30px 60px rgba(0,0,0,.3);
 
 }
 
@@ -507,66 +503,17 @@ display:block;
 
 object-fit:cover;
 
-transition:.35s ease;
+border-radius:30px;
+
+transition:transform .35s ease;
 
 }
 
 .project-video:hover video{
 
-transform:scale(1.03);
+transform:scale(1.02);
 
 }
-
-.video-overlay{
-
-position:absolute;
-
-inset:0;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-justify-content:center;
-
-gap:10px;
-
-background:rgba(0,0,0,.35);
-
-backdrop-filter:blur(2px);
-
-color:white;
-
-transition:.3s;
-
-pointer-events:none;
-
-}
-
-.video-overlay span{
-
-font-size:60px;
-
-}
-
-.video-overlay p{
-
-font-size:16px;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-}
-
-.project-video:hover .video-overlay{
-
-opacity:0;
-
-}
-
 
 
 .project-info h2 {
