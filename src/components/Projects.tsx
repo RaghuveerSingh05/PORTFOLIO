@@ -10,7 +10,7 @@ description:
 features:
 "⭐ Time-based rating system • Coin collection • Platforming mechanics • Speedrun gameplay",
 video:"/videos/rate-my-run.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/ratemyrun"
 },
 
 
@@ -22,7 +22,7 @@ description:
 features:
 "3D movement • AI opponent • Platform claiming system • Strategic gameplay",
 video:"/videos/jump-tac-toe.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/jump-tac-toe"
 },
 
 
@@ -34,7 +34,7 @@ description:
 features:
 "Speedrun mechanics • Multiple challenges • Timer system • Platforming",
 video:"/videos/4-doors.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/4-doors"
 },
 
 
@@ -46,7 +46,7 @@ description:
 features:
 "Memory system • Sequence generation • Puzzle mechanics • Replayability",
 video:"/videos/color-memory.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/sequence-out"
 },
 
 
@@ -58,7 +58,7 @@ description:
 features:
 "Exploration • Key system • Door unlocking • Atmospheric design",
 video:"/videos/into-the-dark.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/into-the-dark"
 },
 
 
@@ -70,7 +70,7 @@ description:
 features:
 "Typing mechanics • Enemy waves • Score system • Increasing difficulty",
 video:"/videos/keystrike.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/keystrike"
 },
 
 
@@ -82,7 +82,7 @@ description:
 features:
 "Color mechanics • Obstacle navigation • Fast gameplay",
 video:"/videos/colordash.mp4",
-link:"#"
+link:"https://raghuve3r.itch.io/colordash"
 }
 
 ];
