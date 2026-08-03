@@ -20,14 +20,14 @@ function Hero() {
 
 
       <p className="hero-tag">
-        GAME DEVELOPER
+        <h3>GAME DEVELOPER</h3>
       </p>
 
 
 
-      <h2>
+      <h1>
         RAGHUVEER SINGH SHEKHAWAT 
-      </h2>
+      </h1>
 
 
 
