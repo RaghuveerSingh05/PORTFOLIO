@@ -374,44 +374,9 @@ function Projects() {
               <p style={{ fontSize: "16px", lineHeight: "1.7", color: "#cccccc", margin: "0 0 12px 0" }}>
                 {selectedProject.description}
               </p>
-              <p style={{ fontSize: "14px", color: "#999", margin: "0 0 24px 0", lineHeight: "1.6" }}>
+              <p style={{ fontSize: "14px", color: "#999", margin: 0, lineHeight: "1.6" }}>
                 {selectedProject.features}
               </p>
-              
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <a
-                  href={selectedProject.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{
-                    padding: "14px 32px",
-                    borderRadius: "12px",
-                    border: "2px solid #6c5ce7",
-                    background: "rgba(108,92,231,0.15)",
-                    color: "white",
-                    fontSize: "16px",
-                    fontWeight: "600",
-                    cursor: "pointer",
-                    transition: "all 0.3s ease",
-                    textDecoration: "none",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "rgba(108,92,231,0.3)";
-                    e.currentTarget.style.boxShadow = "0 0 20px rgba(108,92,231,0.3)";
-                    e.currentTarget.style.transform = "translateY(-2px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = "rgba(108,92,231,0.15)";
-                    e.currentTarget.style.boxShadow = "none";
-                    e.currentTarget.style.transform = "translateY(0)";
-                  }}
-                >
-                  {getButtonText(selectedProject.link)}
-                </a>
-              </div>
             </div>
           </div>
         </div>
