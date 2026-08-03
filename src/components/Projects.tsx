@@ -356,6 +356,7 @@ function Projects() {
                 controls
                 autoPlay
                 loop
+                muted
                 playsInline
                 preload="auto"
                 style={{
