@@ -20,22 +20,24 @@ function Hero() {
 
 
       <p className="hero-tag">
-        GAME DEVELOPER • CSE STUDENT
+        GAME DEVELOPER
       </p>
 
 
 
       <h1>
-        RAGHUVEER
+        RAGHUVEER SINGH SHEKHAWAT 
       </h1>
 
 
 
       <p className="hero-description">
 
-        I create interactive experiences,
-        games and digital products using
-        Unity, C# and modern technologies.
+       I create interactive experiences, games, and digital products using Unity, 
+       C#, and modern development tools. Passionate about gameplay programming, 
+       I enjoy designing engaging mechanics, intuitive user experiences, and polished systems 
+       that bring ideas to life. From fast-paced arcade games and platformers to puzzle adventures and desktop applications, 
+       I focus on writing clean, efficient code while continuously exploring new technologies and improving my craft as a developer.
 
       </p>
 
