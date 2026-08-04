@@ -88,7 +88,7 @@ function Projects() {
       description:
         "A recreation of the classic Pac-Man experience featuring maze navigation, ghost AI behaviours, power pellets and scoring.",
       features:
-        "Ghost AI • Multiple modes • Power pellets • Difficulty progression",
+        "Ghost AI • Power pellets • Difficulty progression",
       poster: "/posters/pacman.jpg",
       video: "/videos/pacman.webm",
       link: "https://github.com/RaghuveerSingh05/PacMan-pygame",
