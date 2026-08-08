@@ -46,7 +46,7 @@ function Hero() {
 
 
         <a
-          href="Raghuveer_Singh_Shekhawat_Resume.pdf"
+          href="/Raghuveer_Singh_Shekhawat_Resume.pdf"
           download
         >
 
