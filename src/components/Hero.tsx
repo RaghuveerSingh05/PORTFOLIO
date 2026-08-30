@@ -46,11 +46,11 @@ function Hero() {
 
 
         <a
-          href="/Raghuveer_Singh_Shekhawat_Resume.pdf"
+          href="/Raghuveer_Singh_Shekhawat.pdf"
           download
         >
 
-          DOWNLOAD RESUME
+          DOWNLOAD CV
 
         </a>
 

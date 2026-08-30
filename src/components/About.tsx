@@ -76,12 +76,12 @@ function About() {
 
 
             <a
-              href="/Raghuveer_Singh_Shekhawat_Resume.pdf"
+              href="/Raghuveer_Singh_Shekhawat.pdf"
               download
             >
 
               <button>
-                DOWNLOAD RESUME
+                DOWNLOAD CV
               </button>
 
 
