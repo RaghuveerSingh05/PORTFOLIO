@@ -81,7 +81,7 @@ function About() {
             >
 
               <button>
-                DOWNLOAD CV
+                DOWNLOAD RESUME
               </button>
 
 

@@ -50,7 +50,7 @@ function Hero() {
           download
         >
 
-          DOWNLOAD CV
+          DOWNLOAD RESUME
 
         </a>
 
