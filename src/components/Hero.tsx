@@ -10,7 +10,7 @@ function Hero() {
 
 
         <img
-          src="/profile.png"
+          src="/raghuveer.png"
           alt="Raghuveer"
         />
 

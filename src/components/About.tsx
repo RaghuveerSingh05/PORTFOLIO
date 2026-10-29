@@ -18,7 +18,7 @@ function About() {
 
 
           <img
-            src="/profile.png"
+            src="/raghuveer.png"
             alt="Raghuveer"
           />
 
